@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 40%);
+    perspective: 1000px;
+    align-items: center;
+    display: flex;
+}
+
+.flip-btn{
+    width: 400px;
+    height: 400px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 50px;
+}   
+
+.numbers{
+    text-align: center;
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+    padding-top: 150px;
+    background-color: rgba(118, 58, 214, 0.788);
+}
+
+#first{
+    transform: translatez(200px)
+}
+
+#second{
+    transform: translatey(-400px) translatex(200px) rotatey(90deg);
+}
+
+#third{
+    transform: translatey(-800px) translatez(-200px) rotatey(180deg);
+}
+
+#fourth{
+    transform: translatey(-1200px) translatex(-200px) rotatey(-90deg);
+}
+
+#fifth{
+    transform: translateY(-1800px) rotatex(90deg);
+}
+
+#sixth{
+    transform: translateY(-1800px) rotatex(-90deg);
+}
+
+.btns{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    right: -80%;
+}
+
+.btn{
+    margin: 20px;
+    width: 130px;
+    height: 70px;
+    font-size: 40px;
+    padding: 7.5px;
+    color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.btn:active{
+    transform: scale(90%);
+}
+
+.btn:hover{
+    background-color: rgb(255, 99, 71);
+    transition: all 0.6s;
+}
