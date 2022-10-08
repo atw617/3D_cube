@@ -5,4 +5,4 @@ This is my first project for practice :)
 Refefence)
 It consists of only HTML and CSS not Javascript
 
- https://moonsoonge.github.io/3D_cube/3D_cube
+ https://atw617.github.io/3D_cube/3D_cube
